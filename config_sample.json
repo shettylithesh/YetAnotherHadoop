@@ -1,0 +1,14 @@
+{
+    "block_size": 64,
+    "path_to_datanodes": "/users/vinaynaidu/DATANODE/",
+    "path_to_namenodes": "/users/vinaynaidu/NAMENODE/",
+    "replication_factor": 3,
+    "num_datanodes": 10,
+    "datanode_size": 20,
+    "sync_period": 30,
+    "datanode_log_path": "/users/vinaynaidu/DATANODE/DATANODE_LOGS.txt",
+    "namenode_log_path": "/users/vinaynaidu/NAMENODE/NAMENODE_LOGS.txt",
+    "namenode_checkpoints": "/users/vinaynaidu/NAMENODE/CHECKPOINTS/",
+    "fs_path": "/users/vinaynaidu/DFS/FILE_SYSTEM/",
+    "dfs_setup_config": "/users/vinaynaidu/DFS/setup.json"
+}
