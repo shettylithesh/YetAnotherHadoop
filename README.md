@@ -18,14 +18,14 @@ Python 3.8.x
 
 3. [K S Abhisheka](https://github.com/Abhi-k-s)
 
-### Creating the DFS
+### Creating the DFS :
 
 This process initialises the distributed file system. Datanode folders, datanode code files, namenode and secondary namenode files, metadata files get created. It takes the config_sample.json file as the configuration file. If the file is not provided, a default configuration will be loaded.
 
 $ python3 createhdfs.py
 
 
-### Starting the Command Line Interface (CLI)
+### Starting the Command Line Interface (CLI) :
 
 This script starts the CLI. Commands such as put, cat, ls, rm can be executed and map reduce jobs can be executed.
 
@@ -54,7 +54,7 @@ file> -m <absolute path of mapper file> -r <absolute path of reducer file>
   
 The example mapper.py and reducer.py files can be used to test the working. The US Accident datset and the map reduce specifications are also included in the MapReduceExample folder.
   
-Implementation details
+### Implementation details :
   
 The Heartbeat functionality is implemented using UDP client-server model. After every sync_period seconds, the datanodes send a message to the primary namenode. The primary namenode also sends the heartbeat to secondary namenode every sync_period seconds. The secondary namenode periodically performs backup of the primary namenode metadata files every sync_period seconds. Data will be persistent. When a file is written to DFS, replication will be performed according to the size of the file, block_size and replication_factor.
 
