@@ -81,3 +81,5 @@ The deletion of replicas when ```rm <filename>``` command is executed and the im
 #### 2.Algorithm for replication and Data Storage for Parallelization :
 
 #### 3.MetaData File implementation for Tracking Data/Block,Replicas and DataNode Status :
+
+#### 4.Command Line Interphase as UI
